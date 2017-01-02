@@ -41,7 +41,8 @@ function insertPlane($plane) {
 
 function updatePlane($plane) {
     global $conn;
-    $sql = 'UPDATE plane SET model="' .$plane->model .'" , seat_count='.$plane->seat_count.' WHERE id=' . $plane->id;
+    $sql = 'UPDATE plane SET model="' . $plane->model .'" , seat_count='. $plane->seat_count .' WHERE id=' . $plane->id;
+    dd($sql);
     $conn->query($sql);
 }
 
