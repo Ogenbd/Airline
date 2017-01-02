@@ -3,16 +3,21 @@ import Vue from 'vue'
 import VueRouter from 'vue-router';
 import VueResource from 'vue-resource'
 
-import Home from './components/home';
-import MainNav from './components/main-nav';
+import Home from './components/home/home.vue';
+import MainNav from './components/main-nav/main-nav.vue';
+import Plane from './components/plane/plane.vue'
 
 Vue.use(VueRouter);
 Vue.use(VueResource)
 
+Vue.http.options.root = 'http://localhost/airline/api'
 
 const routes = [{
   path: '/',
   component: Home
+},{
+  path: '/plane',
+  component: Plane
 }]
 
 const router = new VueRouter({
