@@ -3,8 +3,8 @@
   <section class="passenger-list">
     <ul>
       <li v-for="passenger in passengers" class="box">
-        <p>ID: {{passenger.id}}
-        <p>Name: {{passenger.name}}
+        <p>ID: {{passenger.id}}</p>
+        <p>Name: {{passenger.name}}</p>
         <p>
           <button class="button" @click="$emit('edit', passenger)">Edit</button>
           <button class="button is-danger" @click="$emit('deletePassenger', passenger)">X</button>
