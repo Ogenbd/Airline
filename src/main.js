@@ -6,8 +6,11 @@ import VeeValidate from 'vee-validate';
 
 import Home from './components/home/home.vue';
 import MainNav from './components/main-nav/main-nav.vue';
+
 import Plane from './components/plane/plane.vue'
 import Flight from './components/flight/flight.vue'
+import Passenger from './components/passenger/passenger.vue';
+
 
 Vue.use(VueRouter);
 Vue.use(VueResource)
@@ -18,6 +21,9 @@ Vue.http.options.root = 'http://localhost/airline/api'
 const routes = [{
   path: '/',
   component: Home
+},{
+  path: '/passenger',
+  component: Passenger
 },{
   path: '/plane',
   component: Plane
