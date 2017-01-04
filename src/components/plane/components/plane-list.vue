@@ -3,14 +3,14 @@
   <section class="plane-list">
     <ul>
       <li v-for="plane in planes" class="box">
-        <p>ID: {{plane.id}}
-        <p>Model: {{plane.model}}
-        <p>Seat Count: {{plane.seat_count}}  
+        <p>ID: {{plane.id}}</p>
+        <p>Model: {{plane.model}}</p>
+        <p>Seat Count: {{plane.seat_count}}</p>  
         <p>
           <button class="button" @click="$emit('edit', plane)">Edit</button>
           <button class="button is-danger" @click="$emit('deletePlane', plane)">X</button>
         </p>
-        </li>
+      </li>
     </ul>
   </section>
 

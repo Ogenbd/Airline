@@ -12,10 +12,10 @@
     "test": "npm run unit && npm run e2e"
   },
   "dependencies": {
-    "bootstrap": "^3.3.7",
     "bulma": "^0.2.3",
     "moment": "^2.17.1",
     "vue": "^2.0.1",
+    "vue-multiselect": "next",
     "vue-resource": "^1.0.3",
     "vue-router": "^2.0.1"
   },
